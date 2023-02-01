@@ -1,0 +1,253 @@
+body {
+    margin: 1rem 5rem;
+    background: linear-gradient(45deg,rgb(4, 51, 100), rgba(4, 12, 24, 1), rgb(3, 57, 115));
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+/* navigation */
+header nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 1rem;
+    color: white;
+}
+
+header nav ul li {
+    padding: 0.4em 0em;
+    position: relative;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    padding: 1em 1em;
+}
+header nav ul li:before{
+    position: absolute;
+    content: "";
+    width: 0%;
+    bottom: -1px;
+    border-bottom: 2px solid rgba(255, 72, 32, 1);
+    transition: width 0.2s ease-in;
+}
+
+header nav ul li:hover::before{
+    width: 100%;
+}
+#first-nav{
+    position: relative;
+    right: 65px;
+}
+#first-nav li:nth-child(1) a{
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+#second-nav li:nth-child(2){
+    background-color: rgba(255, 72, 32, 1);
+    border-radius:5px;
+}
+
+/* hero section */
+main {
+    height: 100vh;
+    width: 100%;
+}
+
+.hero {
+    display: flex;
+}
+
+.hero h1 {
+    font-size: 3.7rem;
+   background: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hero p {
+    font-size: 1.4rem;
+    color: #81AFDD;
+}
+.emailArea{
+    display: flex;
+    gap: 0.5rem;
+}
+.emailArea input{
+    padding: 1rem;
+    width: 65%;
+    font-size: 1.1rem;
+    color: #81AFDD;
+    border:none;
+    border-radius: 5px;
+    background: #052D56;
+}
+.emailArea button{
+    border-radius: 5px;
+    padding: 1.3rem;
+    background-color: rgba(255, 72, 32, 1);
+    color: white;
+    font-size: 1.3rem;
+}
+/* companyLogo starts */
+#companyLogo{
+    text-align: center;
+    margin: 5rem 0rem;
+}
+/* section2 starts */
+
+.section{
+    background-image: linear-gradient(to right bottom, #1176ce, #0567b8, #003f73, #002c50, #062946, #004379);
+    padding: 3rem 4rem;
+    margin:6rem 0;
+    color: white;
+    box-shadow: 0px 5px 38px -2px black;
+}
+
+.section1-heading{
+    display: flex;
+}
+.section1-heading h1{
+    width: 40%;
+    font-weight:bolder;
+    font-size: 2rem;
+}
+.section1-heading p{
+    width: 60%;
+    font-size: 1.1rem;
+    color:#81AFDD ;
+}
+
+#sectionMainH{
+    font-size: 2.5rem;
+    width: 50%;
+   background: linear-gradient(80deg, #ac76ea , #ea7232 );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+}
+.cards div{
+    width: 30%;
+}
+.cards h2{
+    margin: 4rem 0rem;
+}
+
+.cards h2{
+    position: relative;
+}
+
+.cards h2::before{
+    position: absolute;
+    content: "";
+    width: 15%;
+    border-bottom: 4px solid #a462ef ;
+    border-radius: 20px;
+    top: -8px;
+}
+
+.cards p{
+    color: #81AFDD;
+letter-spacing: 1px;}
+
+
+/* section3 starts */
+#section3{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 4rem;
+}
+#flex3-parent{
+    width: 60%;
+}
+.section3Content{
+    width: 35%;
+    background: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.4rem;
+}
+.flex3{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.flex3 h3{
+    width: 30%;
+    color: white;
+    font-size: 1.2rem;
+    position: relative;
+}
+.flex3 h3::before{
+    position: absolute;
+    content: "";
+    width: 15%;
+    border-bottom: 4px solid #a462ef ;
+    border-radius: 20px;
+    top: -8px;
+}
+.flex3 p{
+    width: 50%;
+    font-size: 1.2rem;
+    color: #81AFDD;
+}
+
+/* section4 starts */
+#section4{
+    display: flex;
+    align-items: center;
+}
+#section4 img{
+    height: 35rem;
+}
+
+#section4 h1{
+    width: 80%;
+    background: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3rem;
+}
+
+#section4 p{
+    color: #81AFDD;
+    font-size: 1.3rem;
+}
+
+#section5{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1.5rem 0rem;
+    background: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
+    border-radius: 5px;
+    margin: 6rem 0rem;
+}
+#section5 h1{
+    font-size: 1.7rem;
+}
+#section5 button{
+    padding: 1rem 2rem;
+    border-radius: 40px;
+    background-color: black;
+    color: white;
+    font-size: 1.2rem;
+}
+
